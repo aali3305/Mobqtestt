@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="jsonplaceholder-typicode-post-tests" verbose="1">
+    <listeners>
+        <listener class-name="common.MyTestListener"/>
+    </listeners>
+    <test name="post-tests">
+        <parameter name="username" value="Delphine" />
+        <parameter name="invalidUserName" value="This for testing purpose"/>
+        <parameter name="invalidUserId" value="12854125"/>
+        <parameter name="invalidPostId" value="8654121"/>
+        <parameter name="postTitle" value="Post title"/>
+        <parameter name="postBody" value="This is a sample post body for testing "/>
+        <parameter name="updatedPostTitle" value="Updated post title"/>
+        <parameter name="fakePostId" value="2"/>
+        <classes>
+            <class name="tests.TC_UserSearchandFindPost">
+                <methods>
+                    <include name="verifyGetAllUsers"/>
+                    <include name="verifyGetUser"/>
+                    <include name="verifyGetPostsByUserId"/>
+                    <include name="verifyPostComments"/>
+                    <include name="verifyCreatePost"/>
+                    <include name="verifyUpdatePost"/>
+                    <include name="verifyDeletePost"/>
+                </methods>
+            </class>
+            <class name="tests.TC_PostNegativeTests">
+                <methods>
+                    <include name="verifyGetUserWithInvalidNameReturnsAnEmptyArray"/>
+                    <include name="verifyGetPostsByInvalidUserIdReturnsAnEmptyArray"/>
+                    <include name="verifyGetPostCommentsByInvalidPostIdReturnsAnEmptyArray"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

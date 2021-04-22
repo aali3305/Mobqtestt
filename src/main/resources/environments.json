@@ -1,0 +1,13 @@
+{
+  "staging": {
+    "baseUrl": "https://jsonplaceholder.typicode.com/"
+  },
+  "preProd": {
+    "baseUrl": "https://jsonplaceholder.typicode.com/"
+  },
+  "common": {
+    "posts": "posts",
+    "comments": "comments",
+    "users": "users"
+  }
+}
