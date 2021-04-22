@@ -1,7 +1,7 @@
 # Mobiquity Code Challange
 API Automation Framework for testing of Restfull Api
 
-[![CircleCI](https://circleci.com/gh/akshayamaldhure/jsonplaceholder-typicode-tests.svg?style=svg)](rep)
+[![CircleCI](https://circleci.com/gh/akshayamaldhure/jsonplaceholder-typicode-tests.svg?style=svg)](https://app.circleci.com/pipelines/github/aali3305/Mobqtestt)
 
 ## Framework Technology  
 1. Java 11
